@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM golang:1.25 as builder
+FROM --platform=$BUILDPLATFORM registry.ci.openshift.org/ocp/builder:rhel-9-golang-1.25-openshift-4.22 as builder
 
 ## GOLANG env
 ARG GOPROXY="https://proxy.golang.org|direct"
